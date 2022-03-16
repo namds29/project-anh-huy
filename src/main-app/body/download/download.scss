@@ -1,0 +1,76 @@
+.upper-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  .text {
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .quality {
+    background: #f1f1f1;
+    border: 0.5px solid #dcdbdb;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 27px;
+    margin-left: 15px;
+    color: #17ed46;
+    font-weight: 800;
+  }
+  .save {
+    width: 72px;
+    height: 27px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    background: #86e177;
+    border: 1px solid #faf9f9;
+    border-radius: 11px;
+    margin-left: 15px;
+    .text-button {
+      padding-left: 10px;
+    }
+  }
+}
+.lower-section {
+  height: 60vh;
+  padding: 22px 26px 9px 27px;
+  position: relative;
+  .content {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .section-file {
+    background-color: #f8f7f7;
+    height: 100%;
+    border: 1px solid #e2dede;
+    overflow-y: auto;
+    .date {
+      position: absolute;
+      color: #f40e0e;
+      font-weight: 600;
+      font-size: 16px;
+      background-color: #e8e1e1;
+      padding: 5px 15px;
+      border-radius: 6px;
+      top: 6px;
+      left: 50px;
+      z-index: 2;
+    }
+    .checkmark {
+      width: 20px;
+      height: 20px;
+    }
+    .file-name {
+      padding-left: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .upper-section {
+    flex-wrap: wrap;
+  }
+}

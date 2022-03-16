@@ -1,0 +1,195 @@
+.section-drag-file {
+  padding: 22px 26px 9px 27px;
+  .box-drag-file {
+    background-color: #eeecec;
+    height: 100%;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    border: 1px dashed #000000;
+  }
+  .position-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -45px;
+    margin-left: -95px;
+  }
+  .click-area {
+    display: flex;
+    justify-content: center;
+    .box-click {
+      width: 52px;
+      height: 52px;
+      background-color: #c4c4c4;
+    }
+  }
+  .title {
+    text-align: center;
+    padding-top: 12px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+.section-process {
+  padding: 0 26px 9px 27px;
+  .process-box {
+    border: 0.2px solid #000000;
+    height: 30vh;
+    overflow-y: auto;
+    .process-bar {
+      .content {
+        display: flex;
+        .select {
+          padding-left: 5px;
+        }
+        .file-name {
+          padding-left: 5px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+      .process-infor {
+        display: flex;
+        .percent {
+          font-weight: 400;
+          font-size: 9px;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+        progress {
+          width: 100%;
+          padding-right: 10px;
+          padding-top: 3px;
+        }
+        button {
+          background-color: white;
+          padding-left: 10px;
+          padding-right: 10px;
+          cursor: pointer;
+          border: none;
+          img {
+            width: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.checkbox-process {
+  position: relative;
+  cursor: pointer;
+  input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    height: 12px;
+    width: 12px;
+    background-color: #eee;
+  }
+  input:checked ~ .checkmark {
+    background-color: red;
+  }
+}
+.progress1::-webkit-progress-value {
+  background-color: #5ecc63;
+  border-radius: 30px;
+}
+.progress1::-webkit-progress-bar {
+  background-color: #f9f6f6;
+  border-radius: 30px;
+  height: 7px;
+}
+progress {
+  -webkit-appearance: none;
+}
+.section-bottom {
+  padding: 0 26px 9px 27px;
+  .text-file {
+    text-align: center;
+  }
+  .quality-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .quality {
+      background: #f1f1f1;
+      border: 0.5px solid #dcdbdb;
+      box-sizing: border-box;
+      border-radius: 15px;
+      padding-left: 45px;
+      padding-right: 45px;
+      height: 27px;
+      margin-left: 70px;
+      color: #17ed46;
+      font-weight: 800;
+    }
+    .save {
+      width: 72px;
+      height: 27px;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      background: #86e177;
+      border: 1px solid #faf9f9;
+      border-radius: 11px;
+      margin-left: 15px;
+      .text-button {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+.checkbox {
+  position: relative;
+  cursor: pointer;
+  input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    height: 10px;
+    width: 10px;
+    background-color: #eee;
+  }
+  input:checked ~ .checkmark {
+    background-color: red;
+  }
+}
+.bg-red {
+  border: 2px solid red;
+}
+@media only screen and (max-width: 320px) {
+  .title {
+    font-size: 9px !important;
+  }
+  .position-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -45px !important;
+    margin-left: -72px !important;
+  }
+  .quality-section {
+    flex-flow: wrap !important;
+    .quality {
+      margin-left: 5px !important;
+    }
+    .save {
+      margin-left: 5px !important;
+    }
+  }
+}
